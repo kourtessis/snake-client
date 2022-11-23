@@ -8,6 +8,9 @@ const connect = function () {
     conn.on("connect", () => {
       console.log("Welcome to the game") // code that does something when the connection is first established
     });
+    conn.on("connect", () => {
+      conn.write("Name: KVK") 
+    });
     conn.on("data", (data) => {
       console.log(data) 
     });
