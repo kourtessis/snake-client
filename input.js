@@ -27,6 +27,9 @@ const handleUserInput = function (key) {
   if (key == "d") {
     connection.write("Move: right")
   }
+  if (key == "o") {
+    connection.write("Say: Get out the way!")
+  } 
 };
 
 module.exports = {
